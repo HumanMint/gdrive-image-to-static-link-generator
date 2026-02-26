@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDrive Image → Static Link Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>GDrive Image → Static Link Generator</h1>
+      <p class="muted">Paste a Google Drive image link, convert it, and preview the static link.</p>
+
+      <label for="inputLink">Google Drive link</label>
+      <textarea id="inputLink" rows="3" placeholder="https://drive.google.com/file/d/.../view?usp=sharing"></textarea>
+
+      <div class="row">
+        <button id="convertBtn">Convert</button>
+        <button id="copyBtn" class="secondary" disabled>Copy</button>
+      </div>
+
+      <label for="outputLink">Static image link</label>
+      <input id="outputLink" type="text" readonly placeholder="Converted link appears here" />
+
+      <section id="result" class="result hidden">
+        <a id="imageAnchor" href="#" target="_blank" rel="noopener noreferrer">
+          <img id="previewImg" alt="Generated static image preview" />
+        </a>
+        <p id="statusText" class="status"></p>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
