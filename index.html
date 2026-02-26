@@ -9,6 +9,7 @@
   <body>
     <main class="app">
       <h1>GDrive Image → Static Link Generator</h1>
+      <p class="lead">Welcome to this simple Google Drive static image link generator. Use it to create reliable static image URLs for websites, email signatures, docs, automations, and other workflows that need stable image links.</p>
       <div class="instructions">
         <p><strong>Instructions</strong></p>
         <ol>
@@ -25,11 +26,11 @@
 
       <div class="row">
         <button id="convertBtn">Convert</button>
-        <button id="copyBtn" class="secondary" disabled>Copy</button>
       </div>
 
       <label for="outputLink">Static image link</label>
       <input id="outputLink" type="text" readonly placeholder="Converted link appears here" />
+      <button id="copyBtn" class="secondary" disabled>Copy static link</button>
 
       <section id="result" class="result hidden">
         <a id="imageAnchor" href="#" target="_blank" rel="noopener noreferrer">

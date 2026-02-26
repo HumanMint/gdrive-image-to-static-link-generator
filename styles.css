@@ -26,6 +26,12 @@ body {
 }
 h1 { margin: 0; font-size: 22px; }
 .muted { margin: 0 0 6px; color: var(--muted); font-size: 14px; }
+.lead {
+  margin: 0;
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.45;
+}
 .instructions {
   border: 1px solid var(--line);
   border-radius: 10px;
