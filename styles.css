@@ -26,6 +26,23 @@ body {
 }
 h1 { margin: 0; font-size: 22px; }
 .muted { margin: 0 0 6px; color: var(--muted); font-size: 14px; }
+.instructions {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f9fafb;
+  padding: 10px 12px;
+}
+.instructions p {
+  margin: 0 0 6px;
+  font-size: 13px;
+}
+.instructions ol {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+}
 label { font-size: 13px; color: var(--muted); }
 textarea, input {
   width: 100%;
